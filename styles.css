@@ -108,22 +108,26 @@ ul {
 
 .box {
     flex: 1 0 auto;
+    flex-flow: column;
     border: 2px;
     border-color: #3882F6;
     border-radius: 10px;
     margin: 20px 10px;
-    box-shadow: 0 3px 5px rgba(0, 0, 0, 0.6);
+    box-shadow: 0 3px 5px #6749a8;
     padding: 15px 20px;
-    max-width: 150px;
+    max-width: 200px;
     justify-content: center;
+    text-align: center;
 }
 
 .box:hover {
     
 }
 
-.box img {
+.box i {
     flex-shrink: 0;
+    font-size: 36px;
+    margin-bottom: 10px;
 }
 
 .box p {
@@ -131,7 +135,7 @@ ul {
 }
 
 .testimonial {
-    background-color: #E5E7EB;
+    background-color: #6749a8;
     padding: 30px;
 }
 
@@ -151,7 +155,7 @@ ul {
 .footer {
     display: flex;
     justify-content: center;
-    background-color: #1f2937;
+    background-color: #0e0667;
     padding: 20px;
 }
 
