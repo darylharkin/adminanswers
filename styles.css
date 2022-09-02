@@ -22,8 +22,10 @@ img {
 }
 
 .navbar {
-    background-color: #1f2937;
-    height: 60px;
+    background-color: #6749a8;
+    height: auto;
+    align-items: center;
+    padding: 10px 10px;
 }
 
 .navbar .container {
@@ -34,6 +36,12 @@ img {
 
 .navbar a {
     text-decoration: none;
+}
+
+.navbar a:hover {
+    text-shadow: 0px 0px 5px black,
+                0px 0px 20px black,
+                0px 0px 40px white;
 }
 
 .navbar ul {
@@ -51,6 +59,9 @@ ul {
 .logo {
     font-size: 24px;
     color: #F9FAF8;
+    text-shadow: 0px 0px 5px black,
+                0px 0px 20px black,
+                0px 0px 40px white;
 }
 
 .navbar a {
@@ -59,7 +70,7 @@ ul {
 }
 
 .hero {
-    background-color: #1f2937;
+    background-color: white;
     min-height: 400px;
     margin-bottom: 20px;
 }
@@ -68,23 +79,44 @@ ul {
     display: flex;
     justify-content: space-between;
     align-items: center;
+    height: 500px;
 }
 
 .hero h2 {
     font-size: 48px;
-    color: #F9FAF8;
+    color: #6749a8;
     font-weight: 900;
-    margin-bottom: 10px;
+    margin-bottom: 0px;
+    text-shadow: 0px 0px 1px #6749a8,
+                0px 0px 2px #3882F6,
+                0px 0px 5px white;
+}
+
+.hero h3 {
+    font-size: 38px;
+    color: #0e0667;
+    font-weight: 900;
+    margin-bottom: 30px;
 }
 
 .hero p {
-    font-size: 18px;
-    color: #F9FAF8;
+    font-size: 20px;
+    color: #0e0667;
 }
 
 .hero img {
     max-width: 400px;
-    margin-left: 30px;
+    margin-left: 10px;
+}
+
+.hero button {
+    font-size: 20px;
+    border: 2px solid;
+    border-color: #0e0667;
+    color: #6749a8;
+    background-color: white;
+    margin-top: 20px;
+    margin-left: 0px;
 }
 
 .boxes {
@@ -102,8 +134,9 @@ ul {
 .boxes h2 {
     font-size: 36px;
     font-weight: 900;
-    color: #1F2937;
+    color: #0e0667;
     text-align: center;
+    padding-bottom: 30px;
 }
 
 .box {
@@ -128,8 +161,12 @@ ul {
     flex-shrink: 0;
     font-size: 36px;
     margin-bottom: 10px;
+    color: #0e0667;
 }
 
+.box h3 {
+    color: #0e0667;
+}
 .box p {
     text-align: center;
 }
@@ -142,7 +179,7 @@ ul {
 .quote {
     font-size: 36px;
     font-style: italic;
-    color: #1f2937;
+    color: #E5E7EB;
     text-align: center;
     padding: 30px 20px;
 }
@@ -152,14 +189,14 @@ ul {
     padding-right: 20px;
 }
 
-.footer {
+.cta {
     display: flex;
     justify-content: center;
     background-color: #0e0667;
     padding: 20px;
 }
 
-.footer .container {
+.cta .container {
     display: flex;
     justify-content: space-between;
     background-color: #3882F6;
@@ -171,6 +208,8 @@ ul {
 
 .contact {
     flex-flow: column;
+    justify-items: center;
+    align-items: center;
 }
 
 button {
@@ -186,6 +225,10 @@ button {
     color: white;
 }
 
+button:hover {
+    cursor: pointer;
+}
+
 button:active {
     background-color: white;
     color: #3882F6;
@@ -199,4 +242,21 @@ button:active {
 
 .contact p {
     color: #E5E7EB;
+}
+
+.footer {
+    display: flex;
+    flex-flow: column;
+    align-items: center;
+}
+
+.footer ul {
+    padding: 10px;
+    display: flex;
+}
+
+.footer li {
+    margin: 5px 10px;
+    color: #6749a8;
+    font-size: 30px;
 }
